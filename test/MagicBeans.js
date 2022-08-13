@@ -1,8 +1,8 @@
 const { expect } = require("chai");
-const { ethers, waffle } = require("hardhat");
+const { ethers } = require("hardhat");
 let accounts;
 let myMagicBeansContract;
-const provider = waffle.provider;
+const provider = ethers.provider;
 
 describe("MagicBeans", function () {
   it("Contract should be successfully deployed, account0 is owner", async function () {
